@@ -21,7 +21,7 @@ async def on_ready():
 @client.command()
 async def s(ctx):
 	if ctx.author.id == YOUR ID:
-		player = open('online.txt').readlines()
+		player = open('onlineplayers.txt').readlines()
 		tm = datetime.now()
 		tim = tm.strftime('%H:%M %p')
 		embed = discord.Embed(color=0x00ff00, title='SERVER-STATUS')
