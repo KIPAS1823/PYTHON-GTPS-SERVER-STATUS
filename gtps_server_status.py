@@ -32,11 +32,12 @@ async def s(ctx):
 		text = await ctx.send(embed=embed)
 		while True:
 			players = open('onlineplayers.txt').readlines()
+			tims = tm.strftime('%H:%M %p')
 			newembed = discord.Embed(color=0x00ff00, title='SERVER-STATUS')
 			newembed.set_thumbnail(url=ctx.guild.icon_url)
 			newembed.add_field(name='STATUS:', value='UP')
 			newembed.add_field(name='Players Online:', value=players[0])
-			newembed.set_footer(text='LAST UPDATE TODAY AT ' + tim + '')
+			newembed.set_footer(text='LAST UPDATE TODAY AT ' + tims + '')
 			#start editing
 			edit = threading.Thread(target = await text.edit(embed=newembed))
 			edit.start()
