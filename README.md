@@ -3,3 +3,6 @@ GTPS SERVER STATUS<br>
 Discord: KIPAS#1823<br>
 # How To run Command
 You just do /s in your server status channel
+
+# New Update
+- Can read your Worlds And Accounts Created
