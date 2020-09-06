@@ -50,8 +50,4 @@ async def s(ctx):
 	else:
 		await ctx.send('Oops! You dont have permission do that')
 		
-client.run('Your bot token')
-	else:
-		await ctx.send('Oops! You dont have permission do that')
-		
 client.run('YOUR DISCORD BOT TOKEN')
